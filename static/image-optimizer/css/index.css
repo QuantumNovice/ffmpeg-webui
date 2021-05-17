@@ -1,0 +1,77 @@
+body {
+  background-color: #161413;
+}
+
+h1 {
+  color: #dee068;
+  font-family: "Cursive", "Courier New", monospace;
+  padding-left: 40vw;
+}
+
+.drag-n-drop {
+  width: 20vw;
+  height: 20vh;
+  background-color: blue;
+  border: 2px solid #4ff50d;
+}
+
+.drag-n-drop:hover {
+  border-width: 10px;
+}
+
+input#fileInput {
+  display: inline-block;
+  width: 80%;
+  margin-left: 10vw;
+  padding: 400px 0 0 0;
+  height: 300px;
+  color: transparent;
+  overflow: hidden;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  background: url("/static/image-optimizer/img/pepe.gif") center center no-repeat #363169;
+  border-radius: 20px;
+  background-size: 100%, 100%;
+}
+
+input#upload_button {
+  display: inline-block;
+  width: 20%;
+  padding: 0 0 0 0;
+  height: 100px;
+  overflow: hidden;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  background: url("/static/image-optimizer/img/upload-icon.png") center center no-repeat #161413;
+  border-radius: 20px;
+  background-size: 80px 80px;
+  margin-left: 40%;
+  color: transparent;
+  border: 2px solid #161413;
+  visibility: hidden;
+  align-self: center;
+}
+
+#wait_element {
+  width: 300px;
+  height: 300px;
+  background: url("/static/image-optimizer/img/bird-loading.gif") center center no-repeat #161413;
+  background-size: 200px 200px;
+  margin-left: 10%;
+}
+
+.footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: #8f1fc4;
+  color: white;
+  text-align: center;
+}
+
+#particle-js {
+  border: #f7faf7;
+}

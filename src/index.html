@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static', filename='image-optimizer/css/index.css' ) }}">
+    <title>Document</title>
+
+</head>
+<body>
+    
+    <h1> File Optimizer </h1>
+    
+    <form method="post" enctype="multipart/form-data" id="file-form">
+        <input type="file" name="file" id="fileInput" class="drag-n-drop" ondrop="dropHandler(event);" ondragover="dragOverHandler(event);" onchange="form.submit()"  />
+        <input type="submit" value=Upload id="upload_button" />
+    </form>
+    <div id="particles-js"></div>
+    
+    
+    <div class="footer">
+        <p>Drag n Drop</p>
+    </div>
+    
+</body>
+
+    <script src="{{ url_for ( 'static', filename='image-optimizer/js/index.js' ) }}"></script>
+    <!-- Particle js -->
+    <script src="{{ url_for ( 'static', filename='image-optimizer/particles-js/particles.js' ) }}"></script>
+    <script src="{{ url_for ( 'static', filename='image-optimizer/particles-js/demo/js/app.js' ) }}"></script>
+
+
+</html>
